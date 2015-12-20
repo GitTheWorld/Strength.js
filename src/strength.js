@@ -104,7 +104,7 @@
         } else if (total == 4) {
           thismeter.addClass('medium').html(self.options.mediumText);
         } else {
-          thismeter.addClass('strong').html(self.options.strong);
+          thismeter.addClass('strong').html(self.options.strongText);
         }
       }
 

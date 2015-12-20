@@ -5,7 +5,7 @@
 <title>Untitled Document</title>
 
 
-<link rel="stylesheet" type="text/css" href="strength.css">
+<link rel="stylesheet" type="text/css" href="../../src/strength.css">
 
 
 
@@ -20,15 +20,14 @@
 
 
 
-		
+
 
 	</form>
 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="strength.js"></script>
-<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="../../src/strength.js"></script>
 
 <script>
 
@@ -36,13 +35,21 @@
 
 
 $(document).ready(function($) {
-	
+
 $('#myPassword').strength({
             strengthClass: 'strength',
             strengthMeterClass: 'strength_meter',
             strengthButtonClass: 'button_strength',
             strengthButtonText: 'Show Password',
-            strengthButtonTextToggle: 'Hide Password'
+            strengthButtonTextToggle: 'Hide Password',
+						/*
+						showPasswordToggle: true,
+						veryWeakText: 'very weak',
+						weakText: 'weak',
+						mediumText: 'medium',
+						strongText: 'strong',
+						strengthText: 'Strength'
+						*/
         });
 
 });
